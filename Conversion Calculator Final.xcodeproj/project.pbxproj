@@ -13,6 +13,7 @@
 		9B999F181FAE364A0088C1F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B999F161FAE364A0088C1F2 /* LaunchScreen.storyboard */; };
 		9B999F221FAE385C0088C1F2 /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B999F211FAE385C0088C1F2 /* ConverterViewController.swift */; };
 		9B999F241FAE42770088C1F2 /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B999F231FAE42770088C1F2 /* Converter.swift */; };
+		9BE1636D1FC4F2D300E17B1A /* ConverterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE1636C1FC4F2D300E17B1A /* ConverterModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9B999F191FAE364A0088C1F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B999F211FAE385C0088C1F2 /* ConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
 		9B999F231FAE42770088C1F2 /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
+		9BE1636C1FC4F2D300E17B1A /* ConverterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		9B999F0C1FAE364A0088C1F2 /* Conversion Calculator Final */ = {
 			isa = PBXGroup;
 			children = (
+				9BE1636B1FC4F1AD00E17B1A /* Controller */,
+				9BE1636A1FC4F1A200E17B1A /* View */,
+				9BE163691FC4F18F00E17B1A /* Model */,
 				9B999F0D1FAE364A0088C1F2 /* AppDelegate.swift */,
-				9B999F211FAE385C0088C1F2 /* ConverterViewController.swift */,
-				9B999F111FAE364A0088C1F2 /* Main.storyboard */,
 				9B999F141FAE364A0088C1F2 /* Assets.xcassets */,
-				9B999F161FAE364A0088C1F2 /* LaunchScreen.storyboard */,
 				9B999F191FAE364A0088C1F2 /* Info.plist */,
-				9B999F231FAE42770088C1F2 /* Converter.swift */,
 			);
 			path = "Conversion Calculator Final";
+			sourceTree = "<group>";
+		};
+		9BE163691FC4F18F00E17B1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9BE1636C1FC4F2D300E17B1A /* ConverterModel.swift */,
+				9B999F231FAE42770088C1F2 /* Converter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9BE1636A1FC4F1A200E17B1A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9B999F111FAE364A0088C1F2 /* Main.storyboard */,
+				9B999F161FAE364A0088C1F2 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9BE1636B1FC4F1AD00E17B1A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9B999F211FAE385C0088C1F2 /* ConverterViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BE1636D1FC4F2D300E17B1A /* ConverterModel.swift in Sources */,
 				9B999F0E1FAE364A0088C1F2 /* AppDelegate.swift in Sources */,
 				9B999F221FAE385C0088C1F2 /* ConverterViewController.swift in Sources */,
 				9B999F241FAE42770088C1F2 /* Converter.swift in Sources */,
