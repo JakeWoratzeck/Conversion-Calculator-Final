@@ -23,13 +23,13 @@ class ConverterModel {
     func convertValue (_ input: Double) -> String {
         switch converterState {
             case 0:
-                return String(format: "%.2f", (input - 32) * 0.5556)
+                return String(format: "%.2f", (input - 32) * (5/9))
             case 1:
-                return String(format: "%.2f", (input * 1.8) + 32)
+                return String(format: "%.2f", (input * (9/5)) + 32)
             case 2:
-                return String(format: "%.2f", input * 1.6)
+                return String(format: "%.2f", input / 0.62137)
             case 3:
-                return String(format: "%.2f", input / 1.6)
+                return String(format: "%.2f", input * 0.62137)
             default:
                 return ""
         
